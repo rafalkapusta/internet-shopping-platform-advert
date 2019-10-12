@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1352px;
+    margin: 0 auto;
+}
+
+/*STYLES FOR .NAV*/
+
+.nav {
+    width: 100vw;
+    height: 10vh;
+    box-shadow: 0px 3px 6px -5px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+/*STYLES FOR .BEST_SHOP*/
+
+.best_shop {
+    margin-left: 70px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.best_shop a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #08a6e4;
+    font-size: 32px;
+}
+
+/*STYLES FOR .LIST*/
+
+.list {
+    margin-right: 70px;
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.list li {
+    display: inline-block;
+}
+
+.list li:not(:last-child) {
+    margin-right: 95px;
+}
+
+.list a {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    color: #a5a5a5;
+    letter-spacing: 3.28px;
+    font-weight: bold;
+    border-bottom: 3px solid white;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.list a:hover {
+    color: black;
+    border-bottom: 3px solid #08a6e4;
+}
+
+
+
+
+
+
+
+
+
+
+
