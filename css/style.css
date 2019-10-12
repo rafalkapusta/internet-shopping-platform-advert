@@ -13,13 +13,14 @@
 
 .nav {
     width: 100vw;
-    height: 10vh;
+    /*height: 10vh;*/
     box-shadow: 0 3px 6px -5px rgba(0,0,0,0.3);
     display: flex;
     justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 .nav a {
@@ -30,7 +31,7 @@
 
 .best_shop {
     margin-left: 70px;
-    height: inherit;
+    /*height: inherit;*/
     display: flex;
     align-items: center;
 }
@@ -46,7 +47,7 @@
 
 .list {
     margin-right: 70px;
-    height: inherit;
+    /*height: inherit;*/
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -120,15 +121,247 @@
     background-position: center;
     width: calc(100vw - 17px);
     height: 50vh;
-    margin-bottom: 50px;
+}
+
+/*STYLES FOR .SECTION_ICONS*/
+
+.section_icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    background: white;
+
+}
+
+.section_icons p:first-child {
+    font-size: 36px;
+    margin: 100px 0;
+}
+
+.icons {
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.red_icon, .blue_icon, .green_icon {
+    position: relative;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.red, .blue, .green {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.red_icon p:first-of-type, .blue_icon p:first-of-type, .green_icon p:first-of-type  {
+    margin-top: 15px;
+}
+
+.red_icon p:last-of-type, .blue_icon p:not(:first-of-type), .green_icon p:not(:first-of-type)  {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #A5A5A5;
+    font-weight: lighter;
+}
+
+.blue_icon p:last-of-type, .green_icon p:last-of-type {
+    margin-top:5px;
+    margin-bottom: 120px;
+}
+
+/*STYLE FOR RED ICON*/
+
+.red {
+    background: #FB3B64;
+}
+
+.person {
+    position: absolute;
+    left: 60px;
+    top: 5px;
+}
+
+/*STYLES FOR BLUE ICON*/
+
+.blue {
+    background: #08A6E4;
+}
+
+.eye {
+    position: absolute;
+    left: 44px;
+    top: 15px;
+}
+
+/*STYLES FOR GREEN ICON*/
+
+.green {
+    background: #55DFB4;
+}
+
+.catalog {
+    position: absolute;
+    left: 50px;
+    top: 5px;
+}
+
+/*STYLES FOR .SECTION_BANNER*/
+
+.section_banners {
+    background: #F7F7F7;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/*STYLES FOR .BANNER_TEXT*/
+
+.banner_red .banner_text, .banner_blue .banner_text {
+    width: 50%;
+    margin: 80px 0 80px 35px;
+
+}
+
+.banner_text p:first-child {
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    /*padding-top: 100px;*/
+    margin-bottom: 30px;
+}
+
+.banner_text p:last-child {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 50px;
+    border-bottom: 3px solid #FB3B64;
+}
+
+.banner_blue .banner_text p:last-child {
+    border-bottom: 3px solid #08A6E4;
+}
+
+.banner_green .banner_text p:last-child {
+    border-bottom: 3px solid #55DFB4;
+}
+
+.banner_red, .banner_blue {
+    width: 1015px;
+    background: white;
+    margin: 100px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+}
+
+/*STYLES FOR BANNER_RED*/
+
+.banner_red {
+    margin: 0 auto;
+}
+
+.banner_img {
+    width: 400px;
+    /*border: 1px solid red;*/
+    position: relative;
+    z-index: 1;
 }
 
 
+.macbook {
+    background: url(../images/Macbook.png);
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    position: relative;
+}
 
+.element_red {
+    width: 120px;
+    height: 120px;
+    background: #FB3B64;
+    position: absolute;
+    top: 0px;
+    right: 28px;
+    transform: rotate(45deg);
+    border-radius: 12px;
+    z-index: -1;
+}
 
+/*STYLES FOR .BANNER_BLUE*/
 
+.banner_blue {
+    flex-direction: row-reverse;
+}
 
+.iphone {
+    background: url(../images/iPhone.png);
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    position: relative;
+}
 
+.element_blue {
+    width: 250px;
+    height: 250px;
+    background: #07ACE6;
+    position: absolute;
+    top: -10px;
+    right: 130px;
+    transform: rotate(45deg);
+    border-radius: 181px;
+    z-index: -1;
+}
 
+/*STYLES FOR .BANNER_GREEN*/
+
+.banner_green {
+    width: 1015px;
+    margin: 100px auto 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner_green .banner_text {
+    width: 50%;
+    background: white;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    padding: 80px 0 80px 35px;
+}
+
+.banner_green .banner_img {
+    width: 45%;
+    height: 416px;
+    background: #55DFB4;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.trumpet {
+    background: url("../images/Trumpet.png");
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+
+}
 
 
