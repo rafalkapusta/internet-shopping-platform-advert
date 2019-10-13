@@ -329,7 +329,7 @@
 
 .banner_green {
     width: 1015px;
-    margin: 100px auto 100px auto;
+    margin: 100px auto 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -363,5 +363,138 @@
     background-repeat: no-repeat;
 
 }
+
+/*STYLES FOR .SECTION_PRICING*/
+
+.section_pricing  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_pricing .pricing {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+/*STYLES FOR .PRICING_PLANS*/
+
+.pricing_plans {
+    width: calc(100vw - 17px);
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing_red, .pricing_blue, .pricing_green {
+    text-align: center;
+}
+
+.pricing_plan_featrues {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pricing_plan_featrues p:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+/*STYLES FOR .PRICING_RED AND .PRICING_GREEN*/
+
+.pricing_red > p:first-child, .pricing_green > p:first-child {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.pricing_red .price, .pricing_green .price {
+    font-size: 46px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 14px;
+    margin-bottom: 60px;
+}
+
+.pricing_red .price {
+    color: #FB3B64;
+}
+
+.pricing_green .price {
+    color: #55DFB4;
+}
+
+.pricing_red {
+    border: 1px solid #FB3B64;
+    border-radius: 18px;
+    padding: 50px 100px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.pricing_green {
+    border: 1px solid #55DFB4;
+    border-radius: 18px;
+    padding: 50px 100px;
+    margin: 20px 0;
+    position: relative;
+}
+
+/*STYLES FOR .PRICING_BLUE*/
+
+.pricing_blue > p:first-child {
+    font-size: 21px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.pricing_blue .price {
+    font-size: 46px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 14px;
+    margin-bottom: 60px;
+}
+
+.pricing_blue .price {
+    color: #07ACE6;
+}
+
+.pricing_blue {
+    border: 1px solid #07ACE6;
+    border-radius: 18px;
+    box-shadow: 0px 5px 20px 0px #07ACE629;
+    padding: 50px 100px;
+    position: relative;
+}
+
+/*STYLES FOR .BUTTON_RED .BUTTON_BLUE .BUTTON_GREEN*/
+
+.button_red, .button_blue, .button_green {
+    position: absolute;
+    bottom: -20px;
+    right: 85px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    border-radius: 23px;
+    border: none;
+    padding: 10px 50px
+}
+
+.button_red {
+    background: #EB476E;
+}
+
+.button_blue {
+    background: #07ACE6;
+}
+
+.button_green {
+    background: #55DFB4;
+}
+
+/*ADDING .PRICING_PLANS_FEATURES ICONS*/
+
+
 
 
