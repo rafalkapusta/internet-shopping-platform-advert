@@ -494,7 +494,80 @@
 }
 
 /*ADDING .PRICING_PLANS_FEATURES ICONS*/
+/*STYLES FOR .SECTION_CONTACT*/
 
+.section_contact {
+    margin: 150px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*STYLES FOR QUESTIONS*/
+
+.questions > p:first-child {
+    font-size: 49px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.questions > p:nth-child(2) {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+}
+
+.email_phone {
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #A5A5A5;
+}
+
+/*STYLES FOR FORM*/
+
+.form {
+    position: relative;
+    width: 33vw;
+}
+
+.form_name, .form_email {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_name input, .form_email input {
+    border: none;
+    border-bottom: 1px solid #95989A;
+    height: 40px;
+}
+
+.form_name {
+    margin-bottom: 40px;
+}
+
+.form_label {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3.8px;
+    color: #07ACE6;
+}
+
+.form_button {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    background: #08A6E4;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    box-shadow: 0px 0px 10px 2px #07ACE629;
+    padding: 10px 60px;
+}
 
 
 
