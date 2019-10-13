@@ -4,15 +4,22 @@
     margin: 0;
 }
 
+
 .container {
-    width: 1352px;
+    width: 900px;
     margin: 0 auto;
+}
+
+.empty {
+    width: 100%;
+    /*border: 1px solid red;*/
+    margin-top: 15vh;
 }
 
 /*STYLES FOR .NAV*/
 
 .nav {
-    width: 100vw;
+    width: 100%;
     /*height: 10vh;*/
     box-shadow: 0 3px 6px -5px rgba(0,0,0,0.3);
     display: flex;
@@ -84,7 +91,6 @@
 /*STYLES FOR .OPENING*/
 
 .opening {
-    width: 440px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -119,7 +125,8 @@
     background: url("../images/Background.png");
     background-size: cover;
     background-position: center;
-    width: calc(100vw - 17px);
+    background-repeat: no-repeat;
+    /*width: calc(100vw - 17px);*/
     height: 50vh;
 }
 
@@ -251,7 +258,7 @@
 }
 
 .banner_red, .banner_blue {
-    width: 1015px;
+    /*width: 1015px;*/
     background: white;
     margin: 100px auto 0 auto;
     display: flex;
@@ -328,7 +335,7 @@
 /*STYLES FOR .BANNER_GREEN*/
 
 .banner_green {
-    width: 1015px;
+    /*width: 1015px;*/
     margin: 100px auto 0 auto;
     display: flex;
     justify-content: space-between;
@@ -345,7 +352,7 @@
 
 .banner_green .banner_img {
     width: 45%;
-    height: 416px;
+    height: 395px;
     background: #55DFB4;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
@@ -413,11 +420,11 @@
     font-size: 46px;
     font-family: 'Open Sans', sans-serif;
     margin-top: 14px;
-    margin-bottom: 60px;
 }
 
 .pricing_red .price {
     color: #FB3B64;
+    margin-bottom: 60px;
 }
 
 .pricing_green .price {
@@ -452,7 +459,6 @@
     font-size: 46px;
     font-family: 'Open Sans', sans-serif;
     margin-top: 14px;
-    margin-bottom: 60px;
 }
 
 .pricing_blue .price {
@@ -465,6 +471,13 @@
     box-shadow: 0px 5px 20px 0px #07ACE629;
     padding: 50px 100px;
     position: relative;
+}
+
+.limited_offer {
+    margin-bottom: 60px;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
 
 /*STYLES FOR .BUTTON_RED .BUTTON_BLUE .BUTTON_GREEN*/
@@ -542,6 +555,7 @@
     border: none;
     border-bottom: 1px solid #95989A;
     height: 40px;
+    outline: none;
 }
 
 .form_name {
@@ -555,6 +569,35 @@
     font-weight: bold;
     letter-spacing: 3.8px;
     color: #07ACE6;
+}
+
+.disclaimer {
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+}
+
+/*.disclaimer input {*/
+/*    position: absolute;*/
+/*    opacity: 0;*/
+/*    cursor: pointer;*/
+/*    height: 0;*/
+/*    width: 0;*/
+/*}*/
+
+/*.checkmark {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    height: 25px;*/
+/*    width: 25px;*/
+/*    background-color: #eee;*/
+/*}*/
+
+.disclaimer_text {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: #707070;
 }
 
 .form_button {
@@ -620,6 +663,33 @@ text-decoration: none;
     margin-right: 20px;
 }
 
+/*STYLES FOR ALL BUTTONS PSEUDO CLASSES*/
 
+.opening button:active, .form_button:active, .button_blue:active {
+    background: #069acf;
+    box-shadow: inset 0px 0px 2px 2px #f8f8f8;
+}
+
+.opening button:hover, .form_button:hover, .button_blue:hover {
+    background: #069acf;
+}
+
+.button_red:active {
+    background: #e1355a;
+    box-shadow: inset 0px 0px 2px 2px #f8f8f8;
+}
+
+.button_red:hover {
+    background: #e1355a;
+}
+
+.button_green:active {
+    background: #4cc8a2;
+    box-shadow: inset 0px 0px 2px 2px #f8f8f8;
+}
+
+.button_green:hover {
+    background: #4cc8a2;
+}
 
 
